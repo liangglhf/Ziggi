@@ -1,0 +1,3 @@
+[submodule "Ziggi/vendor/spdlog"]
+	path = Ziggi/vendor/spdlog
+	url = https://github.com/gabime/spdlog
