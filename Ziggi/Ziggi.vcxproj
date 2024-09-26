@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -110,6 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -134,6 +136,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -156,6 +159,8 @@
     <ClInclude Include="src\Ziggi\Events\Event.h" />
     <ClInclude Include="src\Ziggi\Events\KeyEvent.h" />
     <ClInclude Include="src\Ziggi\Events\MouseEvent.h" />
+    <ClInclude Include="src\Ziggi\Layer.h" />
+    <ClInclude Include="src\Ziggi\LayerStack.h" />
     <ClInclude Include="src\Ziggi\Log.h" />
     <ClInclude Include="src\Ziggi\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Ziggi\Window.h" />
@@ -163,6 +168,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ziggi\Application.cpp" />
+    <ClCompile Include="src\Ziggi\LayerStack.cpp" />
+    <ClCompile Include="src\Ziggi\Layer.cpp" />
     <ClCompile Include="src\Ziggi\Log.cpp" />
     <ClCompile Include="src\Ziggi\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\zgpch.cpp">

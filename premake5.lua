@@ -64,14 +64,17 @@ project "Ziggi"
 
 	filter "configurations:Debug"
 		defines "ZG_DEBUG"
+		buildoptions"/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "ZG_RELEASE"
+		buildoptions"/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "ZG_DIST"
+		buildoptions"/MD"
 		symbols "On"
 
 
@@ -116,12 +119,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "ZG_DEBUG"
+		buildoptions"/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "ZG_RELEASE"
+		buildoptions"/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "ZG_DIST"
+		buildoptions"/MD"
 		symbols "On"
