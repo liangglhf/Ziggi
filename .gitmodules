@@ -1,3 +1,6 @@
 [submodule "Ziggi/vendor/spdlog"]
 	path = Ziggi/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Ziggi/vendor/GLFW"]
+	path = Ziggi/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

@@ -1,48 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Ziggi">
+      <UniqueIdentifier>{1FF5960E-8B09-BFBF-548B-621FC05EBBF0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Ziggi\Events">
+      <UniqueIdentifier>{23C8FF71-0F2B-8F16-B8B0-C7CCA4F25A99}</UniqueIdentifier>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Ziggi\Platform">
+      <UniqueIdentifier>{5364300D-3F32-2413-28C6-943914330078}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src">
-      <UniqueIdentifier>{bf28d3ce-5c83-432b-8c21-c176ca1c5ea0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\Ziggi">
-      <UniqueIdentifier>{b9d1e236-9dd9-4bdc-8e72-5b28cfa23391}</UniqueIdentifier>
+    <Filter Include="Ziggi\Platform\Windows">
+      <UniqueIdentifier>{8DB1BA23-79AB-E375-6218-7A864EB149E2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Ziggi.h" />
     <ClInclude Include="src\Ziggi\Application.h">
-      <Filter>头文件</Filter>
+      <Filter>Ziggi</Filter>
     </ClInclude>
     <ClInclude Include="src\Ziggi\Core.h">
-      <Filter>头文件</Filter>
+      <Filter>Ziggi</Filter>
     </ClInclude>
     <ClInclude Include="src\Ziggi\EntryPoint.h">
-      <Filter>头文件</Filter>
+      <Filter>Ziggi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ziggi\Events\ApplicationEvent.h">
+      <Filter>Ziggi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ziggi\Events\Event.h">
+      <Filter>Ziggi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ziggi\Events\KeyEvent.h">
+      <Filter>Ziggi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ziggi\Events\MouseEvent.h">
+      <Filter>Ziggi\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Ziggi\Log.h">
-      <Filter>头文件</Filter>
+      <Filter>Ziggi</Filter>
     </ClInclude>
-    <ClInclude Include="src\Ziggi.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\Ziggi\Platform\Windows\WindowsWindow.h">
+      <Filter>Ziggi\Platform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ziggi\Window.h">
+      <Filter>Ziggi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\zgpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ziggi\Application.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Ziggi</Filter>
     </ClCompile>
     <ClCompile Include="src\Ziggi\Log.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Ziggi</Filter>
     </ClCompile>
+    <ClCompile Include="src\Ziggi\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Ziggi\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zgpch.cpp" />
   </ItemGroup>
 </Project>

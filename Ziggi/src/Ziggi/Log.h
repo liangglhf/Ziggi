@@ -1,9 +1,10 @@
 #pragma once
 
-#include<memory>
+//#include<memory>
 
 #include"core.h"
 #include"spdlog/spdlog.h"
+#include"spdlog/fmt/ostr.h"
 
 namespace Ziggi {
 
